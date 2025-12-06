@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Pattern Library - Home</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;600&family=Montserrat:wght@400;600&family=Nunito:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER  -->
+    <header class="site-header">
+      <h1>Pattern Library - Group 5</h1>
+    </header>
+
+    <nav class="nav-container">
+      <ul class="tab-container">
+        <li class="tab">
+          <a href="#" onclick="showSection('home', event)">Home</a>
+        </li>
+        <li class="tab">
+          <a href="#" onclick="showSection('colors', event)">Colors</a>
+        </li>
+        <li class="tab">
+          <a href="#" onclick="showSection('typography', event)">Typography</a>
+        </li>
+        <li class="tab">
+          <a href="#" onclick="showSection('layouts', event)">Layouts</a>
+        </li>
+        <li class="tab">
+          <a href="#" onclick="showSection('components', event)">Components</a>
+        </li>
+        <li class="tab">
+          <a href="#" onclick="showSection('data-visual', event)"
+            >Data Visualization</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- HOME SECTION -->
+      <section id="home" class="content-section active">
+        <div class="home-wrapper">
+            <h1>Welcome to Group 5's UI Pattern Library</h1>
+            <p class="subtitle">A collection of reusable design patterns for Project 1</p>
+        
+            <div class="home-container">
+              <h2>About This Library</h2>
+              <p>
+                This UI Pattern Library was created by Group 5 to support consistent, accessible, 
+                and reusable interface elements across our dashboard project. 
+                It includes design guidelines and working examples for:
+              </p>
+        
+              <ul class="home-list">
+                <li>🎨 Color Palette & Usage</li>
+                <li>🔤 Typography & Text Styles</li>
+                <li>📐 Layout & Grid Patterns</li>
+                <li>🧩 UI Components (Buttons, Cards, Modals, etc.)</li>
+                <li>📊 Data Visualization (Bar, Line, Pie Charts and more)</li>
+              </ul>
+            </div>
+        
+            <div class="members-container">
+              <h2>Group 5 Members</h2>
+              <ul class="members-list">
+                <li><strong>Jacob</strong></li>
+                <li><strong>Tien</strong></li>
+                <li><strong>Markus</strong></li>
+                <li><strong>Cuong</strong></li>
+                <li><strong>Ikenna</strong></li>
+              </ul>
+            </div>
+        
+            <p class="footnote">Use the navigation bar above to explore each section.</p>
+          </div>
+      </section>
+
+      <!--------------- COLOR SECTION ------------------>
+      <section id="colors" class="content-section">
+        <div class="wrap">
+          <header>
+            <div>
+              <h1>Color Pattern Library — Dashboard Brand Palette</h1>
+              <p>
+                Includes swatches, hex & RGB values, usage notes and examples
+                for buttons, backgrounds, and badges.
+              </p>
+            </div>
+            <div style="margin-left: auto; text-align: right">
+              <div class="badge">Project 1 • Color</div>
+              <div style="font-size: 0.85rem; color: var(--text-low)">
+                Last edited: <strong>Now</strong>
+              </div>
+            </div>
+          </header>
+
+          <section class="grid" id="swatches">
+            <!-- Primary Green-->
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: var(--brand-primary);
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  color: white;
+                  font-weight: 600;
+                "
+              >
+                Primary<br /><small style="font-weight: 400; opacity: 0.9"
+                  >Brand / CTA</small
+                >
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#40916C</strong><br /><small>rgb(64,145,108)</small>
+                </div>
+                <div>
+                  <small
+                    >Usage: Primary buttons, highlights, important states</small
+                  >
+                </div>
+              </div>
+              <div class="examples">
+                <button class="btn">Primary CTA</button>
+                <div class="copy" data-code="#40916C">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --brand-primary: #40916C;</pre
+              >
+            </article>
+
+            <!-- Secondary -->
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: var(--brand-secondary);
+                  color: white;
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  font-weight: 600;
+                "
+              >
+                Secondary<br /><small style="font-weight: 400; opacity: 0.9"
+                  >Navigation / Panels</small
+                >
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#2D6A4F</strong><br /><small>rgb(45,106,79)</small>
+                </div>
+                <div><small>Usage: Header, nav, dark cards</small></div>
+              </div>
+              <div class="examples">
+                <button class="btn secondary">Nav Button</button>
+                <div class="copy" data-code="#2D6A4F">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --brand-secondary: #2D6A4F;</pre
+              >
+            </article>
+
+            <!-- Accent -->
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: var(--accent);
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  font-weight: 600;
+                "
+              >
+                Accent<br /><small style="font-weight: 400; opacity: 0.9"
+                  >Callouts / Accent</small
+                >
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#E8D8C4</strong><br /><small>rgb(232,216,196)</small>
+                </div>
+                <div>
+                  <small>Usage: accents, highlights, positive microcopy</small>
+                </div>
+              </div>
+              <div class="examples">
+                <div
+                  style="
+                    padding: 10px;
+                    border-radius: 8px;
+                    background: linear-gradient(90deg, var(--accent), #f7c94a);
+                    font-weight: 600;
+                  "
+                >
+                  Accent chip
+                </div>
+                <div class="copy" data-code="#E8D8C4">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --accent: #E8D8C4;</pre
+              >
+            </article>
+
+            <!-- Muted / Text low -->
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: var(--muted);
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  color: white;
+                  font-weight: 600;
+                "
+              >
+                Muted / Secondary Text
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#6B7280</strong><br /><small>rgb(107,114,128)</small>
+                </div>
+                <div><small>Usage: secondary text, borders, hints</small></div>
+              </div>
+              <div class="examples">
+                <div
+                  style="
+                    padding: 8px;
+                    border-radius: 8px;
+                    background: rgba(11, 18, 32, 0.03);
+                  "
+                >
+                  Placeholder text
+                </div>
+                <div class="copy" data-code="#6B7280">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --muted: #6B7280;</pre
+              >
+            </article>
+
+            <!-- Background -->
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: var(--bg);
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  font-weight: 600;
+                "
+              >
+                Background
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#F1FAEE</strong><br /><small>rgb(241,250,238)</small>
+                </div>
+                <div><small>Usage: page background, subtle panels</small></div>
+              </div>
+              <div class="examples">
+                <div
+                  style="
+                    padding: 10px;
+                    border-radius: 8px;
+                    background: var(--card);
+                    box-shadow: 0 6px 18px var(--glass);
+                  "
+                >
+                  Card preview
+                </div>
+                <div class="copy" data-code="#F1FAEE">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --bg: #F1FAEE;</pre
+              >
+            </article>
+
+            <!-- Text High -->
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: linear-gradient(0deg, #1B4332, #1B4332);
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  color: white;
+                  font-weight: 600;
+                "
+              >
+                Text - High Contrast
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#1B4332</strong><br /><small>rgb(27,67,50)</small>
+                </div>
+                <div><small>Usage: main headings and body text</small></div>
+              </div>
+              <div class="examples">
+                <div style="font-weight: 700">Heading example</div>
+                <div class="copy" data-code="#1B4332">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --text-high: #1B4332;</pre
+              >
+            </article>
+
+            <!-- Semantic colors -->
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: var(--success);
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  color: white;
+                  font-weight: 600;
+                "
+              >
+                Success
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#16A34A</strong><br /><small>rgb(22,163,74)</small>
+                </div>
+                <div><small>Usage: success badges, positive states</small></div>
+              </div>
+              <div class="examples">
+                <div
+                  style="
+                    padding: 8px;
+                    border-radius: 8px;
+                    background: rgba(22, 163, 74, 0.12);
+                    color: var(--success);
+                  "
+                >
+                  Success
+                </div>
+                <div class="copy" data-code="#16A34A">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --success: #16A34A;</pre
+              >
+            </article>
+
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: var(--warning);
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  color: white;
+                  font-weight: 600;
+                "
+              >
+                Warning
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#F97316</strong><br /><small>rgb(249,115,22)</small>
+                </div>
+                <div><small>Usage: warnings, attention</small></div>
+              </div>
+              <div class="examples">
+                <div
+                  style="
+                    padding: 8px;
+                    border-radius: 8px;
+                    background: rgba(249, 115, 22, 0.12);
+                    color: var(--warning);
+                  "
+                >
+                  Warning
+                </div>
+                <div class="copy" data-code="#F97316">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --warning: #F97316;</pre
+              >
+            </article>
+
+            <article class="swatch">
+              <div
+                class="chip"
+                style="
+                  background: var(--danger);
+                  display: flex;
+                  align-items: flex-end;
+                  padding: 10px;
+                  color: white;
+                  font-weight: 600;
+                "
+              >
+                Danger / Error
+              </div>
+              <div class="meta">
+                <div>
+                  <strong>#DC2626</strong><br /><small>rgb(220,38,38)</small>
+                </div>
+                <div>
+                  <small>Usage: error states, destructive actions</small>
+                </div>
+              </div>
+              <div class="examples">
+                <div
+                  style="
+                    padding: 8px;
+                    border-radius: 8px;
+                    background: rgba(220, 38, 38, 0.12);
+                    color: var(--danger);
+                  "
+                >
+                  Error
+                </div>
+                <div class="copy" data-code="#DC2626">Copy HEX</div>
+              </div>
+              <pre>
+&lt;!-- CSS variable --&gt;
+                --danger: #DC2626;</pre
+              >
+            </article>
+          </section>
+
+          <section class="legend" aria-hidden>
+            <div class="item">
+              <div class="sw" style="background: var(--brand-primary)"></div>
+              <div>
+                <strong>Primary</strong>
+                <div style="font-size: 0.85rem; color: var(--text-low)">
+                  CTA, highlights
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sw" style="background: var(--brand-secondary)"></div>
+              <div>
+                <strong>Secondary</strong>
+                <div style="font-size: 0.85rem; color: var(--text-low)">
+                  Navigation, dark panels
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sw" style="background: var(--accent)"></div>
+              <div>
+                <strong>Accent</strong>
+                <div style="font-size: 0.85rem; color: var(--text-low)">
+                  Badges, microcopy
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sw" style="background: var(--muted)"></div>
+              <div>
+                <strong>Muted</strong>
+                <div style="font-size: 0.85rem; color: var(--text-low)">
+                  Secondary text
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="controls">
+            <label for="themeSelect">Preview theme:</label>
+            <select id="themeSelect">
+              <option value="default">Default (light)</option>
+              <option value="dark">Dark</option>
+            </select>
+            <button id="copyAll" class="copy">Copy CSS variables</button>
+          </div>
+
+          <footer>
+            <strong>Notes / Accessibility</strong>
+            <ul>
+              <li>
+                Each color is provided as HEX and RGB — include these variables
+                in your project CSS.
+              </li>
+              <li>
+                Check contrast for any text placed on top of colored backgrounds
+                (WCAG AA recommended).
+              </li>
+              <li>
+                Usage examples show recommended contexts (buttons, navs,
+                badges). Modify shades for disabled states and hover
+                interactions.
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </section>
+
+      <!-------------- TYPHOGRAPHY SECTION --------------->
+      <section id="typography" class="content-section">
+        <h1>Typography Pattern Library</h1>
+        <p>Select different font styles to preview them below</p>
+
+        <!-- HEADING AREA -->
+        <div class="container">
+          <div class="font-area heading-section">
+            <div class="font-header">
+              <h2>Heading Fonts</h2>
+              <label for="headingFont">Choose heading font:</label>
+              <select
+                id="headingFont"
+                onchange="updateFont('headingSample', this.value)"
+              >
+                <option value="Roboto, sans-serif">Roboto</option>
+                <option value="Open Sans, sans-serif">Open Sans</option>
+                <option value="Lato, sans-serif">Lato</option>
+              </select>
+            </div>
+            <div
+              class="font-display"
+              id="headingSample"
+              style="font-size: 32px; font-family: 'Roboto', sans-serif"
+            >
+              Heading Example : The quick brown fox jumps over the lazy dog
+            </div>
+            <p class="note">Font size: 32px | Font weight: 700</p>
+          </div>
+
+          <!-- PARAGRAPH AREA -->
+          <div class="font-area paragraph-section">
+            <div class="font-header">
+              <h2>Paragraph Fonts</h2>
+              <label for="paraFont">Choose paragraph font:</label>
+              <select
+                id="paraFont"
+                onchange="updateFont('paraSample', this.value)"
+              >
+                <option value="Open Sans, sans-serif">Open Sans</option>
+                <option value="Roboto Slab, serif">Roboto Slab</option>
+                <option value="Inter, sans-serif">Inter</option>
+              </select>
+            </div>
+            <div class="font-display" id="paraSample" style="font-size: 18px">
+              Paragraph Example : Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </div>
+            <p class="note">Font size: 18px | Font weight: 400</p>
+          </div>
+
+          <!-- BUTTON TEXT AREA -->
+          <div class="font-area button-section">
+            <div class="font-header">
+              <h2>Button Text</h2>
+              <label for="btnFont">Choose button font:</label>
+              <select
+                id="btnFont"
+                onchange="updateFont('btnSample', this.value)"
+              >
+                <option value="Poppins, sans-serif">Poppins</option>
+                <option value="Montserrat, sans-serif">Montserrat</option>
+                <option value="Roboto, sans-serif">Roboto</option>
+              </select>
+            </div>
+            <div
+              class="font-display"
+              id="btnSample"
+              style="font-size: 16px; text-transform: uppercase"
+            >
+              BUTTON TEXT EXAMPLE
+            </div>
+            <p class="note">Font size: 16px | Font weight: 600 | Uppercase</p>
+          </div>
+
+          <!-- SMALL TEXT AREA -->
+          <div class="font-area smalltext-section">
+            <div class="font-header">
+              <h2>Small Text</h2>
+              <label for="smallFont">Choose small text font:</label>
+              <select
+                id="smallFont"
+                onchange="updateFont('smallSample', this.value)"
+              >
+                <option value="Open Sans, sans-serif">Open Sans</option>
+                <option value="Inter, sans-serif">Inter</option>
+                <option value="Nunito, sans-serif">Nunito</option>
+              </select>
+            </div>
+            <div class="font-display" id="smallSample" style="font-size: 13px">
+              Small text example : Used for captions and footnotes.
+            </div>
+            <p class="note">Font size: 13px | Font weight: 400</p>
+          </div>
+
+          <!-- SYMBOLS AREA -->
+          <div class="font-area symbols-section">
+            <div class="font-header">
+              <h2>Symbols</h2>
+              <p>Common characters and icons</p>
+            </div>
+            <div class="font-display" id="symbolSample" style="font-size: 28px">
+              <div>
+                ! @ # $ % ^ & * ( ) _ + { } [ ] : ; " ' < > ? / © ™ ® € £ ¥
+              </div>
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </div>
+            <p class="note">Symbols and Font Awesome icons demonstration.</p>
+          </div>
+        </div>
+      </section>
+
+      <!----------------- LAYOUT SECTION ------------------->
+      <section id="layouts" class="content-section">
+        <a class="skip-link" href="layouts.css">Skip to content</a>
+
+    <header class="global-header">
+        <h1>Layout and Grid</h1>
+        <p>Responsive layout patterns for project 1</p>
+    </header>
+   <main id="main">
+    <section id="layout-2col" class="layout-section">
+      <h2>2-Column Layout</h2>
+      <p class="notes">
+        Uses <code>.grid-2</code> (CSS Grid).  
+        Switches to a single column below 768 px.  
+        Gap = 2 rem; max-width = 75 rem, centered.
+      </p>
+
+      <div class="demo-area">
+        <div class="grid-2">
+          <div class="demo-box">Left column</div>
+          <div class="demo-box">Right column</div>
+        </div>
+      </div>
+    </section>
+    <section id="layout-3col" class="layout-section">
+        <h2>3-Column Layout</h2>
+        <p class="notes">
+            Uses <code>.grid-3</code>. 
+            Tablet: 2 columns (auto-fit).  
+            Mobile: 1 column.
+        </p>
+    
+        <div class="demo-area">
+            <div class="grid-3">
+            <div class="demo-box">Card 1</div>
+            <div class="demo-box">Card 2</div>
+            <div class="demo-box">Card 3</div>
+            </div>
+        </div>
+    </section>
+    <section id="layout-header-content" class="layout-section">
+      <h2>Header and Content</h2>
+      <p class="notes">
+        Full-width hero banner followed by centered content block.  
+        Content has max-width 60 rem for readability.
+      </p>
+
+      <div class="demo-area">
+        <header class="demo-hero">
+          <h3>Hero / Header area</h3>
+        </header>
+        <div class="content-box">
+          <p>This content block stays centered and never exceeds 60 rem.</p>
+        </div>
+      </div>
+    </section>
+    <section id="layout-sidebar" class="layout-section">
+        <h2>Sidebar Layout</h2>
+        <p class="notes">
+        Uses <code>.with-sidebar</code> flexbox utility.  
+        Sidebar width = 18 rem; main area takes remaining space.  
+        Stacks vertically on screens ≤ 768 px.
+      </p>
+    
+       <div class="demo-area">
+        <div class="with-sidebar">
+          <aside class="sidebar demo-box">Sidebar</aside>
+          <main class="main-content demo-box">Main content</main>
+        </div>
+      </div>
+      </section>
+    </main>
+      </section>
+
+
+
+
+      
+      <!----------------- COMPONENTS SECTION ----------------->
+      <section id="components" class="content-section">
+        <main class="container">
+          <h1>UI Components Gallery</h1>
+
+          <section id="buttons" class="component-section">
+            <h2>Button</h2>
+            <p>
+              Used to trigger actions like submitting forms or opening dialogs.
+            </p>
+            <div class="example">
+              <button class="btn btn-primary">Primary Button</button>
+              <button class="btn btn-secondary">Secondary Button</button>
+              <button class="btn btn-success">Success Button</button>
+              <button class="btn btn-danger">Danger Button</button>
+            </div>
+          </section>
+
+          <section id="dropdown" class="component-section">
+            <h2>Dropdown</h2>
+            <p>Allows users to select one option from a list.</p>
+            <div class="example dropdown">
+              <select aria-label="Choose an option">
+                <option>Choose an option</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+          </section>
+
+          <section id="input" class="component-section">
+            <h2>Input Field</h2>
+            <p>Captures user input such as text, email, or password.</p>
+            <div class="example input-group">
+              <label for="text-input">Text Input</label>
+              <input
+                type="text"
+                id="text-input"
+                class="input-field"
+                placeholder="Enter your name"
+              />
+            </div>
+          </section>
+
+          <section id="card" class="component-section">
+            <h2>Card</h2>
+            <p>Displays content and actions on a single subject.</p>
+            <div class="example">
+              <div class="card">
+                <h3>Feature Card</h3>
+                <p>Card content goes here with details and information.</p>
+                <div class="card-actions">
+                  <button class="btn btn-primary">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="modal" class="component-section">
+            <h2>Modal</h2>
+            <p>
+              Used for user interactions that require focus, such as
+              confirmation dialogs.
+            </p>
+            <div class="example">
+              <button
+                class="btn btn-primary modal-trigger"
+                onclick="openModal()"
+              >
+                Open Modal
+              </button>
+            </div>
+            <!-- Modal structure -->
+            <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+              <div
+                class="modal"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="modalTitle"
+              >
+                <h3 id="modalTitle">Confirmation Required</h3>
+                <p>Are you sure you want to proceed with this action?</p>
+                <div class="modal-actions">
+                  <button class="btn btn-danger" id="confirmBtn">
+                    Confirm
+                  </button>
+                  <button class="btn btn-secondary" onclick="closeModal()">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="tooltip" class="component-section">
+            <h2>Tooltip</h2>
+            <p>Displays helpful information when hovering over an element.</p>
+            <div class="example tooltip-container">
+              <button class="tooltip-trigger">Hover for Tooltip</button>
+              <span class="tooltip-text" role="tooltip"
+                >Helpful tooltip information!</span
+              >
+            </div>
+          </section>
+        </main>
+
+        <script>
+          // Modal open/close helpers
+          const modalOverlay = document.getElementById("modalOverlay");
+          function openModal() {
+            modalOverlay.style.display = "flex";
+            modalOverlay.setAttribute("aria-hidden", "false");
+            // focus first focusable element inside modal
+            const focusable = modalOverlay.querySelector("button");
+            if (focusable) focusable.focus();
+          }
+          function closeModal() {
+            modalOverlay.style.display = "none";
+            modalOverlay.setAttribute("aria-hidden", "true");
+          }
+          // close modal
+          modalOverlay.addEventListener("click", (e) => {
+            if (e.target === modalOverlay) closeModal();
+          });
+
+          const confirmBtn = document.getElementById("confirmBtn");
+          if (confirmBtn) {
+            confirmBtn.addEventListener("click", () => {
+              alert("Confirmed");
+              closeModal();
+            });
+          }
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeModal();
+          });
+        </script>
+      </section>
+
+      <!--------------- DATA VISUALIZATION SECTION -------------->
+      <section id="data-visual" class="content-section">
+        <div class="container">
+          <h1 class="title" style="color: var(--text-high)">
+            Data visualization
+          </h1>
+
+          <!-- Responsive grid for the charts -->
+          <div class="chart-grid">
+            <!-- Bar Chart -->
+            <div class="chart-card">
+              <h2 class="chart-title" style="color: var(--text-low)">
+                Bar Chart
+              </h2>
+              <div id="bar-chart" class="chart-container"></div>
+            </div>
+
+            <!-- Line Chart -->
+            <div class="chart-card">
+              <h2 class="chart-title" style="color: var(--text-low)">
+                Line Chart
+              </h2>
+              <div id="line-chart" class="chart-container"></div>
+            </div>
+
+            <!-- Area Chart -->
+            <div class="chart-card">
+              <h2 class="chart-title" style="color: var(--text-low)">
+                Area Chart
+              </h2>
+              <div id="area-chart" class="chart-container"></div>
+            </div>
+
+            <!-- Pie Chart -->
+            <div class="chart-card">
+              <h2 class="chart-title" style="color: var(--text-low)">
+                Pie Chart
+              </h2>
+              <div id="pie-chart" class="chart-container"></div>
+            </div>
+
+            <!-- Donut Chart -->
+            <div class="chart-card">
+              <h2 class="chart-title" style="color: var(--text-low)">
+                Donut Chart
+              </h2>
+              <div id="donut-chart" class="chart-container"></div>
+            </div>
+
+            <!-- Scatter Plot -->
+            <div class="chart-card">
+              <h2 class="chart-title" style="color: var(--text-low)">
+                Scatter Plot
+              </h2>
+              <div id="scatter-chart" class="chart-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          // Make chart drawing functions available globally
+          window.chartsInitialized = false;
+          window.chartDrawingFunctions = null;
+
+          window.initializeCharts = function() {
+            // Prevent multiple initializations
+            if (window.chartsInitialized) {
+              return;
+            }
+
+            // Check if data-visual section is visible
+            const dataVisualSection = document.getElementById("data-visual");
+            if (!dataVisualSection || !dataVisualSection.classList.contains("active")) {
+              return;
+            }
+
+            // Clear any existing charts
+            d3.selectAll(".chart-container svg").remove();
+
+            // --- Get Colors from CSS Variables ---
+            const styles = getComputedStyle(document.documentElement);
+            const brandPrimary = styles
+              .getPropertyValue("--brand-primary")
+              .trim();
+            const brandSecondary = styles
+              .getPropertyValue("--brand-secondary")
+              .trim();
+            const accent = styles.getPropertyValue("--accent").trim();
+            const muted = styles.getPropertyValue("--muted").trim();
+            const success = styles.getPropertyValue("--success").trim();
+            const warning = styles.getPropertyValue("--warning").trim();
+            const danger = styles.getPropertyValue("--danger").trim();
+            const textLow = styles.getPropertyValue("--text-low").trim();
+
+            // --- Sample Data ---
+            const simpleData = [
+              { label: "Jan", value: 12 },
+              { label: "Feb", value: 19 },
+              { label: "Mar", value: 3 },
+              { label: "Apr", value: 5 },
+              { label: "May", value: 2 },
+              { label: "Jun", value: 3 },
+            ];
+
+            const areaData = [
+              { label: "Jan", value: 5 },
+              { label: "Feb", value: 8 },
+              { label: "Mar", value: 15 },
+              { label: "Apr", value: 12 },
+              { label: "May", value: 19 },
+              { label: "Jun", value: 25 },
+            ];
+
+            const pieData = [
+              { label: "Red", value: 300, color: brandPrimary },
+              { label: "Gold", value: 150, color: accent },
+              { label: "Green", value: 100, color: success },
+              { label: "Navy", value: 50, color: brandSecondary },
+            ];
+
+            const donutData = [
+              { label: "Warning", value: 50, color: warning },
+              { label: "Danger", value: 25, color: danger },
+              { label: "Muted", value: 25, color: muted },
+            ];
+
+            const scatterData = [
+              { x: 20, y: 88 },
+              { x: 22, y: 92 },
+              { x: 25, y: 80 },
+              { x: 30, y: 95 },
+              { x: 31, y: 75 },
+              { x: 35, y: 82 },
+              { x: 40, y: 70 },
+              { x: 42, y: 78 },
+              { x: 45, y: 65 },
+              { x: 50, y: 72 },
+              { x: 55, y: 60 },
+              { x: 60, y: 68 },
+            ];
+
+            // --- Reusable D3 Setup ---
+            const getChartDims = (containerId) => {
+              const container = d3.select(containerId);
+              const width = container.node().getBoundingClientRect().width;
+              const height = 320; // from .chart-container
+              const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+              const innerWidth = width - margin.left - margin.right;
+              const innerHeight = height - margin.top - margin.bottom;
+              return {
+                container,
+                width,
+                height,
+                margin,
+                innerWidth,
+                innerHeight,
+              };
+            };
+
+            // --- 1. Bar Chart ---
+            const drawBarChart = () => {
+              const { container, margin, innerWidth, innerHeight } =
+                getChartDims("#bar-chart");
+
+              const svg = container
+                .append("svg")
+                .attr(
+                  "viewBox",
+                  `0 0 ${innerWidth + margin.left + margin.right} ${
+                    innerHeight + margin.top + margin.bottom
+                  }`
+                )
+                .append("g")
+                .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+              const x = d3
+                .scaleBand()
+                .domain(simpleData.map((d) => d.label))
+                .range([0, innerWidth])
+                .padding(0.1);
+
+              const y = d3
+                .scaleLinear()
+                .domain([0, d3.max(simpleData, (d) => d.value)])
+                .range([innerHeight, 0]);
+
+              svg
+                .append("g")
+                .attr("class", "axis")
+                .attr("transform", `translate(0, ${innerHeight})`)
+                .call(d3.axisBottom(x));
+
+              svg.append("g").attr("class", "axis").call(d3.axisLeft(y));
+
+              svg
+                .selectAll(".bar")
+                .data(simpleData)
+                .enter()
+                .append("rect")
+                .attr("class", "bar")
+                .attr("x", (d) => x(d.label))
+                .attr("y", (d) => y(d.value))
+                .attr("width", x.bandwidth())
+                .attr("height", (d) => innerHeight - y(d.value))
+                .attr("fill", brandPrimary);
+            };
+
+            // --- 2. Line Chart ---
+            const drawLineChart = () => {
+              const { container, margin, innerWidth, innerHeight } =
+                getChartDims("#line-chart");
+
+              const svg = container
+                .append("svg")
+                .attr(
+                  "viewBox",
+                  `0 0 ${innerWidth + margin.left + margin.right} ${
+                    innerHeight + margin.top + margin.bottom
+                  }`
+                )
+                .append("g")
+                .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+              const x = d3
+                .scalePoint()
+                .domain(simpleData.map((d) => d.label))
+                .range([0, innerWidth]);
+
+              const y = d3
+                .scaleLinear()
+                .domain([0, d3.max(simpleData, (d) => d.value)])
+                .range([innerHeight, 0]);
+
+              svg
+                .append("g")
+                .attr("class", "axis")
+                .attr("transform", `translate(0, ${innerHeight})`)
+                .call(d3.axisBottom(x));
+
+              svg.append("g").attr("class", "axis").call(d3.axisLeft(y));
+
+              const line = d3
+                .line()
+                .x((d) => x(d.label))
+                .y((d) => y(d.value));
+
+              svg
+                .append("path")
+                .datum(simpleData)
+                .attr("fill", "none")
+                .attr("stroke", accent)
+                .attr("stroke-width", 2)
+                .attr("d", line);
+            };
+
+            // --- 3. Area Chart ---
+            const drawAreaChart = () => {
+              const { container, margin, innerWidth, innerHeight } =
+                getChartDims("#area-chart");
+
+              const svg = container
+                .append("svg")
+                .attr(
+                  "viewBox",
+                  `0 0 ${innerWidth + margin.left + margin.right} ${
+                    innerHeight + margin.top + margin.bottom
+                  }`
+                )
+                .append("g")
+                .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+              const x = d3
+                .scalePoint()
+                .domain(areaData.map((d) => d.label))
+                .range([0, innerWidth]);
+
+              const y = d3
+                .scaleLinear()
+                .domain([0, d3.max(areaData, (d) => d.value)])
+                .range([innerHeight, 0]);
+
+              svg
+                .append("g")
+                .attr("class", "axis")
+                .attr("transform", `translate(0, ${innerHeight})`)
+                .call(d3.axisBottom(x));
+
+              svg.append("g").attr("class", "axis").call(d3.axisLeft(y));
+
+              const area = d3
+                .area()
+                .x((d) => x(d.label))
+                .y0(innerHeight)
+                .y1((d) => y(d.value))
+                .curve(d3.curveMonotoneX);
+
+              svg
+                .append("path")
+                .datum(areaData)
+                .attr("fill", success)
+                .attr("fill-opacity", 0.2)
+                .attr("stroke", success)
+                .attr("stroke-width", 2)
+                .attr("d", area);
+            };
+
+            // --- 4. Pie Chart ---
+            const drawPieChart = (containerId, data, innerRadiusFactor) => {
+              const { container, width, height, margin } =
+                getChartDims(containerId);
+              const radius =
+                Math.min(width, height) / 2 -
+                Math.max(margin.top, margin.right);
+              const innerRadius = radius * (innerRadiusFactor || 0);
+
+              const svg = container
+                .append("svg")
+                .attr("viewBox", `0 0 ${width} ${height}`)
+                .append("g")
+                .attr("transform", `translate(${width / 2}, ${height / 2})`);
+
+              const color = d3
+                .scaleOrdinal()
+                .domain(data.map((d) => d.label))
+                .range(data.map((d) => d.color));
+
+              const pie = d3
+                .pie()
+                .value((d) => d.value)
+                .sort(null);
+
+              const arc = d3.arc().innerRadius(innerRadius).outerRadius(radius);
+
+              const arcs = svg
+                .selectAll(".arc")
+                .data(pie(data))
+                .enter()
+                .append("g")
+                .attr("class", "arc");
+
+              arcs
+                .append("path")
+                .attr("d", arc)
+                .attr("fill", (d) => color(d.data.label));
+            };
+
+            // --- 6. Scatter Plot ---
+            const drawScatterPlot = () => {
+              const { container, margin, innerWidth, innerHeight } =
+                getChartDims("#scatter-chart");
+
+              const svg = container
+                .append("svg")
+                .attr(
+                  "viewBox",
+                  `0 0 ${innerWidth + margin.left + margin.right} ${
+                    innerHeight + margin.top + margin.bottom
+                  }`
+                )
+                .append("g")
+                .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+              const x = d3
+                .scaleLinear()
+                .domain([0, d3.max(scatterData, (d) => d.x) + 5])
+                .range([0, innerWidth]);
+
+              const y = d3
+                .scaleLinear()
+                .domain([0, d3.max(scatterData, (d) => d.y) + 5])
+                .range([innerHeight, 0]);
+
+              // Add X axis
+              svg
+                .append("g")
+                .attr("class", "axis")
+                .attr("transform", `translate(0, ${innerHeight})`)
+                .call(d3.axisBottom(x));
+
+              // Add Y axis
+              svg.append("g").attr("class", "axis").call(d3.axisLeft(y));
+
+              // Add gridlines
+              svg
+                .append("g")
+                .attr("class", "gridline")
+                .call(d3.axisLeft(y).tickSize(-innerWidth).tickFormat(""));
+
+              svg
+                .append("g")
+                .attr("class", "gridline")
+                .attr("transform", `translate(0, ${innerHeight})`)
+                .call(d3.axisBottom(x).tickSize(-innerHeight).tickFormat(""));
+
+              // Add dots
+              svg
+                .append("g")
+                .selectAll("dot")
+                .data(scatterData)
+                .enter()
+                .append("circle")
+                .attr("cx", (d) => x(d.x))
+                .attr("cy", (d) => y(d.y))
+                .attr("r", 5)
+                .style("fill", brandPrimary);
+            };
+
+            // Store drawing functions for resize handler
+            window.chartDrawingFunctions = {
+              drawBarChart,
+              drawLineChart,
+              drawAreaChart,
+              drawPieChart,
+              drawScatterPlot,
+              pieData,
+              donutData,
+            };
+
+            // --- Draw all charts ---
+            drawBarChart();
+            drawLineChart();
+            drawAreaChart();
+            drawPieChart("#pie-chart", pieData, 0); // 0 innerRadius for Pie
+            drawPieChart("#donut-chart", donutData, 0.6); // 0.6 innerRadius for Donut
+            drawScatterPlot();
+
+            window.chartsInitialized = true;
+          };
+
+          // Initialize on DOMContentLoaded if section is already active
+          document.addEventListener("DOMContentLoaded", () => {
+            // Small delay to ensure DOM is fully ready
+            setTimeout(() => {
+              if (window.initializeCharts) {
+                window.initializeCharts();
+              }
+            }, 100);
+
+            // --- Redraw on resize (simple version) ---
+            window.addEventListener("resize", () => {
+              const dataVisualSection = document.getElementById("data-visual");
+              if (
+                dataVisualSection &&
+                dataVisualSection.classList.contains("active") &&
+                window.chartDrawingFunctions
+              ) {
+                // Clear all SVGs
+                d3.selectAll(".chart-container svg").remove();
+
+                // Redraw all
+                window.chartDrawingFunctions.drawBarChart();
+                window.chartDrawingFunctions.drawLineChart();
+                window.chartDrawingFunctions.drawAreaChart();
+                window.chartDrawingFunctions.drawPieChart(
+                  "#pie-chart",
+                  window.chartDrawingFunctions.pieData,
+                  0
+                );
+                window.chartDrawingFunctions.drawPieChart(
+                  "#donut-chart",
+                  window.chartDrawingFunctions.donutData,
+                  0.6
+                );
+                window.chartDrawingFunctions.drawScatterPlot();
+              }
+            });
+          });
+        </script>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Group 5 – Fanshawe College</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      function showSection(sectionId, event) {
+        event.preventDefault();
+        // hide all sections
+        document.querySelectorAll(".content-section").forEach((section) => {
+          section.classList.remove("active");
+        });
+
+        // show selected section
+        const selected = document.getElementById(sectionId);
+        if (selected) selected.classList.add("active");
+
+        // If data-visual section is shown, initialize charts
+        if (sectionId === "data-visual") {
+          // Reset initialization flag so charts can be redrawn
+          if (typeof window.chartsInitialized !== "undefined") {
+            window.chartsInitialized = false;
+          }
+          // Small delay to ensure section is visible before drawing
+          setTimeout(() => {
+            if (typeof window.initializeCharts === "function") {
+              window.initializeCharts();
+            }
+          }, 50);
+        }
+      }
+
+      // Typography
+      function updateFont(elementId, fontValue) {
+        document.getElementById(elementId).style.fontFamily = fontValue;
+      }
+    </script>
+  </body>
+</html>
